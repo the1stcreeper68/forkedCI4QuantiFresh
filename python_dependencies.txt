@@ -5,4 +5,4 @@ pytest
 pymongo
 # [STATUS] NEW ADDED
 #__ Protect local household saves and switches across processes.
-filelock>=3.16,<4
+filelock>=4.2.10

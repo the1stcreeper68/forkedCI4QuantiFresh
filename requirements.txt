@@ -4,4 +4,4 @@ openai
 # [STATUS] NEW ADDED
 #__ Match household persistence dependencies used by Docker.
 pymongo
-filelock>=3.16,<4
+filelock>=4.2.10
