@@ -1,0 +1,15 @@
+services:
+  quantifresh:
+    build: .
+    image: quantifresh
+    container_name: quantifresh
+
+    stdin_open: true
+    tty: true
+
+    env_file:
+      - ./.env
+
+    volumes:
+      - ./app_data/database:/app/app_data/database
+      - ./app_data/logs:/app/app_data/logs

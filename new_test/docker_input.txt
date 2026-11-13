@@ -1,0 +1,14 @@
+create
+Smoke Test Household
+no
+Rick
+70
+male
+
+2
+Morty
+15
+male
+
+no
+3

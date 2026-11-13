@@ -1,0 +1,7 @@
+requests
+python-dotenv
+openai
+# [STATUS] NEW ADDED
+#__ Match household persistence dependencies used by Docker.
+pymongo
+filelock>=3.16,<4
