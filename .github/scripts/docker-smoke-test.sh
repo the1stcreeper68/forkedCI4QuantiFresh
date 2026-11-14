@@ -9,10 +9,10 @@ run --rm -T -e USE_MONGO=0 test< /dev/null 2>&1 || true)
 echo "$output" #prints outpout of test to terminal 
 
 if echo "$output" | grep -Fq 'Welcome to the QuantiFresh!' \
-   && echo "$output" | grep -Fq 'Household menu:' \
-   && echo "$output" | grep -Fq '1. Create household' \
-   && echo "$output" | grep -Fq '2. Enter household ID' \
-   && echo "$output" | grep -Fq '3. Exit'; then
+   && echo "$output" | grep -Fq 'Choose your Household Space:' \
+   && echo "$output" | grep -Fq '1. Enter Household Space ID' \
+   && echo "$output" | grep -Fq '2. Create Household Space' \
+   && echo "$output" | grep -Fq '3. Exit the program'; then
   echo "Smoke test passed: menu displayed." #successful if execution returns exit 0 by defualt
 else
 echo "Smoke test failed: menu not displayed"
